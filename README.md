@@ -3,8 +3,8 @@
 ## 使用[xmake](https://xmake.io/)构建
 
 ```shell
-# 编译运行
-xmake r
+# 构建
+xmake
 # 使用xmake生成CMakeLists.txt、makefile和compile_commands.json
 xmake project --kind=cmake
 xmake project --kind=makefile
@@ -17,7 +17,7 @@ xmake f -m debug
 
 ```shell
 mkdir build && pushd build
-make
+cmake .. &&  make
 ```
 
 ## 使用[Makefile](https://www.gnu.org/software/make/)构建
@@ -28,8 +28,9 @@ make
 
 ## 如何使用？
 
-向data/targets文件夹添加对象目标即可，图片文件名即是人名
+向[data/targets文件夹](./data/targets)添加对象目标即可，图片文件名即是人名
+如需添加新的参数配置，请修改[include/config.hpp文件](include/config.hpp)
 
 ## 运行效果
 
-![视频](./data/demo.mp4)
+![](./data/demo.gif)
