@@ -1,0 +1,228 @@
+{
+    opencv = {
+        envs = {
+            PYTHONPATH = {
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/lib/python3.12/site-packages",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/6755efc7e6584d358ce4a60ae683ad1e/lib/python3.12/site-packages"
+            },
+            PATH = {
+                "/home/luoyebai/.xmake/packages/n/nasm/2.16.01/741359323fea438382579625e96d04ab/bin",
+                "/home/luoyebai/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/Scripts",
+                "/home/luoyebai/.xmake/packages/m/meson/1.4.2/04c8d33fab9b4e33bf8df3773cc47e54/bin",
+                "/home/luoyebai/.xmake/packages/n/ninja/1.11.1/e691430a7c3b4c6c8cc40e6379d16643/bin",
+                "/home/luoyebai/.xmake/packages/c/cmake/3.30.1/7867d9482fab44e0bd72b014e5cdcc00/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/6755efc7e6584d358ce4a60ae683ad1e/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/6755efc7e6584d358ce4a60ae683ad1e/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/6755efc7e6584d358ce4a60ae683ad1e/Scripts"
+            },
+            LD_LIBRARY_PATH = {
+                "/home/luoyebai/.xmake/packages/o/opencv/4.10.0/15ed235307c143e18dd036c1a8e1179a/lib",
+                "/home/luoyebai/.xmake/packages/n/nasm/2.16.01/741359323fea438382579625e96d04ab/lib",
+                "/home/luoyebai/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/lib",
+                "/home/luoyebai/.xmake/packages/o/openssl/1.1.1-w/6c51ab6278e2479b883dffafac69fdaf/lib",
+                "/home/luoyebai/.xmake/packages/c/ca-certificates/20240207/248ec2a883cf403bad9ac86ef1158760/lib",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/lib",
+                "/home/luoyebai/.xmake/packages/m/meson/1.4.2/04c8d33fab9b4e33bf8df3773cc47e54/lib",
+                "/home/luoyebai/.xmake/packages/n/ninja/1.11.1/e691430a7c3b4c6c8cc40e6379d16643/lib",
+                "/home/luoyebai/.xmake/packages/l/libdrm/2.4.118/3bdb010ab7264f30b9f3a46196afb477/lib",
+                "/home/luoyebai/.xmake/packages/f/ffmpeg/7.0/9959acd05e1c4aee82e4fcfe8d526064/lib",
+                "/home/luoyebai/.xmake/packages/g/gtk+3/latest/5e932289495e4d1ba23bdca998625cd8/lib",
+                "/home/luoyebai/.xmake/packages/c/cmake/3.30.1/7867d9482fab44e0bd72b014e5cdcc00/lib",
+                "/home/luoyebai/.xmake/packages/o/openssl/1.1.1-w/2f9d64eaebb64023ac980b4f47801789/lib",
+                "/home/luoyebai/.xmake/packages/c/ca-certificates/20240207/248ec2a883cf403bad9ac86ef1158760/lib",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/6755efc7e6584d358ce4a60ae683ad1e/lib"
+            }
+        },
+        __requireconfs = {
+            configs = {
+                gtk = true
+            }
+        },
+        version = "4.10.0",
+        links = {
+            "opencv_gapi",
+            "opencv_stitching",
+            "opencv_alphamat",
+            "opencv_aruco",
+            "opencv_bgsegm",
+            "opencv_bioinspired",
+            "opencv_ccalib",
+            "opencv_cvv",
+            "opencv_dnn_objdetect",
+            "opencv_dnn_superres",
+            "opencv_dpm",
+            "opencv_face",
+            "opencv_freetype",
+            "opencv_fuzzy",
+            "opencv_hdf",
+            "opencv_hfs",
+            "opencv_img_hash",
+            "opencv_intensity_transform",
+            "opencv_line_descriptor",
+            "opencv_mcc",
+            "opencv_quality",
+            "opencv_rapid",
+            "opencv_reg",
+            "opencv_rgbd",
+            "opencv_saliency",
+            "opencv_signal",
+            "opencv_stereo",
+            "opencv_structured_light",
+            "opencv_phase_unwrapping",
+            "opencv_superres",
+            "opencv_optflow",
+            "opencv_surface_matching",
+            "opencv_tracking",
+            "opencv_highgui",
+            "opencv_datasets",
+            "opencv_text",
+            "opencv_plot",
+            "opencv_videostab",
+            "opencv_videoio",
+            "opencv_viz",
+            "opencv_wechat_qrcode",
+            "opencv_xfeatures2d",
+            "opencv_shape",
+            "opencv_ml",
+            "opencv_ximgproc",
+            "opencv_video",
+            "opencv_xobjdetect",
+            "opencv_objdetect",
+            "opencv_calib3d",
+            "opencv_imgcodecs",
+            "opencv_features2d",
+            "opencv_dnn",
+            "opencv_flann",
+            "opencv_xphoto",
+            "opencv_photo",
+            "opencv_imgproc",
+            "opencv_core",
+            "avcodec",
+            "avdevice",
+            "avfilter",
+            "avformat",
+            "avutil",
+            "postproc",
+            "swresample",
+            "swscale",
+            "drm",
+            "gtk-3",
+            "gdk-3",
+            "z",
+            "harfbuzz",
+            "pangocairo-1.0",
+            "pango-1.0",
+            "atk-1.0",
+            "cairo",
+            "cairo-gobject",
+            "gdk_pixbuf-2.0",
+            "gio-2.0",
+            "glib-2.0",
+            "gobject-2.0"
+        },
+        sysincludedirs = {
+            "/usr/include/opencv4",
+            "/usr/include/libdrm",
+            "/usr/include/gtk-3.0",
+            "/usr/include/pango-1.0",
+            "/usr/include/cairo",
+            "/usr/include/gdk-pixbuf-2.0",
+            "/usr/include/atk-1.0",
+            "/usr/include/freetype2",
+            "/usr/include/glib-2.0",
+            "/usr/lib/glib-2.0/include",
+            "/usr/include/harfbuzz",
+            "/usr/include/libmount",
+            "/usr/include/blkid",
+            "/usr/include/libpng16",
+            "/usr/include/pixman-1",
+            "/usr/include/cloudproviders",
+            "/usr/include/at-spi2-atk/2.0",
+            "/usr/include/at-spi-2.0",
+            "/usr/include/dbus-1.0",
+            "/usr/lib/dbus-1.0/include",
+            "/usr/include/fribidi",
+            "/usr/include/sysprof-6",
+            "/usr/include/gio-unix-2.0"
+        },
+        __enabled = true,
+        cxflags = "-pthread",
+        linkdirs = { },
+        __requirestr = "opencv"
+    },
+    ffmpeg = {
+        sysincludedirs = "/usr/include/libdrm",
+        links = {
+            "avcodec",
+            "avdevice",
+            "avfilter",
+            "avformat",
+            "avutil",
+            "postproc",
+            "swresample",
+            "swscale",
+            "drm"
+        },
+        envs = {
+            PYTHONPATH = {
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/lib/python3.12/site-packages"
+            },
+            PATH = {
+                "/home/luoyebai/.xmake/packages/n/nasm/2.16.01/741359323fea438382579625e96d04ab/bin",
+                "/home/luoyebai/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/bin",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/Scripts",
+                "/home/luoyebai/.xmake/packages/m/meson/1.4.2/04c8d33fab9b4e33bf8df3773cc47e54/bin",
+                "/home/luoyebai/.xmake/packages/n/ninja/1.11.1/e691430a7c3b4c6c8cc40e6379d16643/bin"
+            },
+            LD_LIBRARY_PATH = {
+                "/home/luoyebai/.xmake/packages/f/ffmpeg/7.0/9959acd05e1c4aee82e4fcfe8d526064/lib",
+                "/home/luoyebai/.xmake/packages/n/nasm/2.16.01/741359323fea438382579625e96d04ab/lib",
+                "/home/luoyebai/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/lib",
+                "/home/luoyebai/.xmake/packages/o/openssl/1.1.1-w/6c51ab6278e2479b883dffafac69fdaf/lib",
+                "/home/luoyebai/.xmake/packages/c/ca-certificates/20240207/248ec2a883cf403bad9ac86ef1158760/lib",
+                "/home/luoyebai/.xmake/packages/p/python/3.12.3/e060770aa5524556bd4dbd54471db6c0/lib",
+                "/home/luoyebai/.xmake/packages/m/meson/1.4.2/04c8d33fab9b4e33bf8df3773cc47e54/lib",
+                "/home/luoyebai/.xmake/packages/n/ninja/1.11.1/e691430a7c3b4c6c8cc40e6379d16643/lib",
+                "/home/luoyebai/.xmake/packages/l/libdrm/2.4.118/3bdb010ab7264f30b9f3a46196afb477/lib"
+            }
+        },
+        __requireconfs = {
+            configs = ref("opencv", "__requireconfs", "configs")
+        },
+        __enabled = true,
+        version = "7.0.1",
+        __requirestr = "ffmpeg"
+    },
+    gtest = {
+        syslinks = "pthread",
+        envs = {
+            LD_LIBRARY_PATH = {
+                "/home/luoyebai/.xmake/packages/g/gtest/v1.14.0/f970d73ab5f14d76aa4b780b603d9493/lib"
+            }
+        },
+        __requireconfs = {
+            configs = ref("opencv", "__requireconfs", "configs")
+        },
+        version = "v1.14.0",
+        links = {
+            "gtest",
+            "gmock"
+        },
+        installdir = "/home/luoyebai/.xmake/packages/g/gtest/v1.14.0/f970d73ab5f14d76aa4b780b603d9493",
+        static = true,
+        libfiles = {
+            "/home/luoyebai/.xmake/packages/g/gtest/v1.14.0/f970d73ab5f14d76aa4b780b603d9493/lib/libgtest.a",
+            "/home/luoyebai/.xmake/packages/g/gtest/v1.14.0/f970d73ab5f14d76aa4b780b603d9493/lib/libgmock.a"
+        },
+        __enabled = true,
+        license = "BSD-3",
+        sysincludedirs = "/home/luoyebai/.xmake/packages/g/gtest/v1.14.0/f970d73ab5f14d76aa4b780b603d9493/include",
+        linkdirs = "/home/luoyebai/.xmake/packages/g/gtest/v1.14.0/f970d73ab5f14d76aa4b780b603d9493/lib",
+        __requirestr = "gtest"
+    }
+}

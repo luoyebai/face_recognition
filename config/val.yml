@@ -1,0 +1,27 @@
+%YAML:1.0
+
+debug: 1
+# 0 = use cap , 1 = use video
+cap_or_video: 1
+cap_index: 0
+video_name: "face_test.mp4"
+zoom: 0.5
+
+# detection
+detection_onnx: "face_detection_yunet_2023mar.onnx"  
+detect_threshold: 0.8
+nms_threshold: 0.3
+top_k: 30
+backend_target: 0
+draw_face_points: True
+# recognition
+sface_onnx: "face_recognition_sface_2021dec.onnx"
+# 0 = cosine , 1 = norm_l1
+distance_type: 0
+# cosine_threshold: 0.363
+# norm_l2_threshold: 1.128
+cosine_threshold: 0.363
+norm_l2_threshold: 1.128
+
+# targets dir name
+targets_dir_name: "targets"

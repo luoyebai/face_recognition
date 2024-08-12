@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FaceRecognitionSFace: Detector类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FaceRecognitionSFace
+   </div>
+   <div id="projectbrief">人脸识别程序</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classDetector.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classDetector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Detector类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>完整的识别器  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="detector_8hpp_source.html">detector.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Detector 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDetector__coll__graph.png" border="0" usemap="#aDetector_coll__map" alt="Collaboration graph"/></div>
+<map name="aDetector_coll__map" id="aDetector_coll__map">
+<area shape="rect" title="完整的识别器" alt="" coords="5,5,137,181"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9c698b57d7329ae072790cf44811c580" id="r_a9c698b57d7329ae072790cf44811c580"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c698b57d7329ae072790cf44811c580">Detector</a> (<a class="el" href="classYuNet.html">YuNet</a> yunet, <a class="el" href="classSFace.html">SFace</a> sface)</td></tr>
+<tr class="separator:a9c698b57d7329ae072790cf44811c580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f845f8b3d879412445023e85a0ca598" id="r_a6f845f8b3d879412445023e85a0ca598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f845f8b3d879412445023e85a0ca598">addTargetData</a> (const <a class="el" href="structTargetData.html">TargetData</a> &amp;new_target_data)</td></tr>
+<tr class="memdesc:a6f845f8b3d879412445023e85a0ca598"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加目标特征值  <br /></td></tr>
+<tr class="separator:a6f845f8b3d879412445023e85a0ca598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7e06535da874e0a7b64239ae3e0361" id="r_a1e7e06535da874e0a7b64239ae3e0361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e7e06535da874e0a7b64239ae3e0361">addTargetDatas</a> (const <a class="el" href="detector_8hpp.html#a5fcb42ca58004dccae43df4bdbd5806c">TargetDataVec</a> &amp;new_target_data_vec)</td></tr>
+<tr class="memdesc:a1e7e06535da874e0a7b64239ae3e0361"><td class="mdescLeft">&#160;</td><td class="mdescRight">批量添加目标特征值  <br /></td></tr>
+<tr class="separator:a1e7e06535da874e0a7b64239ae3e0361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bd68eab0c3e29e5fe404d8b7a319b0" id="r_a47bd68eab0c3e29e5fe404d8b7a319b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47bd68eab0c3e29e5fe404d8b7a319b0">clearTargetDatas</a> ()</td></tr>
+<tr class="memdesc:a47bd68eab0c3e29e5fe404d8b7a319b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除所有的目标  <br /></td></tr>
+<tr class="separator:a47bd68eab0c3e29e5fe404d8b7a319b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d7c634461f7eebe9ac7c2ea5679cd4" id="r_a97d7c634461f7eebe9ac7c2ea5679cd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDetectResult.html">DetectResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97d7c634461f7eebe9ac7c2ea5679cd4">detectFace</a> (const cv::Mat input, int top_k=1)</td></tr>
+<tr class="memdesc:a97d7c634461f7eebe9ac7c2ea5679cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">人脸识别，获得一张图片上所有的人脸和对应特征值  <br /></td></tr>
+<tr class="separator:a97d7c634461f7eebe9ac7c2ea5679cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f76ab3bf7b369088bd12e749b0b79a6" id="r_a0f76ab3bf7b369088bd12e749b0b79a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="detector_8hpp.html#a8d3b186a6dee1f1cfd9d05101e0ec3d0">MatchDataVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f76ab3bf7b369088bd12e749b0b79a6">matchTargetFace</a> (<a class="el" href="structDetectResult.html">DetectResult</a> detect_result)</td></tr>
+<tr class="memdesc:a0f76ab3bf7b369088bd12e749b0b79a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用识别到的数据进行人脸匹配  <br /></td></tr>
+<tr class="separator:a0f76ab3bf7b369088bd12e749b0b79a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>完整的识别器 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a9c698b57d7329ae072790cf44811c580" name="a9c698b57d7329ae072790cf44811c580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c698b57d7329ae072790cf44811c580">&#9670;&#160;</a></span>Detector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Detector::Detector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classYuNet.html">YuNet</a></td>          <td class="paramname"><span class="paramname"><em>yunet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSFace.html">SFace</a></td>          <td class="paramname"><span class="paramname"><em>sface</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a6f845f8b3d879412445023e85a0ca598" name="a6f845f8b3d879412445023e85a0ca598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f845f8b3d879412445023e85a0ca598">&#9670;&#160;</a></span>addTargetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Detector::addTargetData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTargetData.html">TargetData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>new_target_data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加目标特征值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_target_data</td><td>新的目标数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e7e06535da874e0a7b64239ae3e0361" name="a1e7e06535da874e0a7b64239ae3e0361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e7e06535da874e0a7b64239ae3e0361">&#9670;&#160;</a></span>addTargetDatas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Detector::addTargetDatas </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="detector_8hpp.html#a5fcb42ca58004dccae43df4bdbd5806c">TargetDataVec</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>new_target_data_vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>批量添加目标特征值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_target_data_vec</td><td>新的目标数据向量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47bd68eab0c3e29e5fe404d8b7a319b0" name="a47bd68eab0c3e29e5fe404d8b7a319b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bd68eab0c3e29e5fe404d8b7a319b0">&#9670;&#160;</a></span>clearTargetDatas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Detector::clearTargetDatas </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除所有的目标 </p>
+
+</div>
+</div>
+<a id="a97d7c634461f7eebe9ac7c2ea5679cd4" name="a97d7c634461f7eebe9ac7c2ea5679cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d7c634461f7eebe9ac7c2ea5679cd4">&#9670;&#160;</a></span>detectFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDetectResult.html">DetectResult</a> Detector::detectFace </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat</td>          <td class="paramname"><span class="paramname"><em>input</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>top_k</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>人脸识别，获得一张图片上所有的人脸和对应特征值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>输入图像 </td></tr>
+    <tr><td class="paramname">top_k</td><td>最多几张人脸 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="structDetectResult.html" title="人脸检测结果类型，包括人脸和特征值">DetectResult</a> 结果 </dd></dl>
+
+</div>
+</div>
+<a id="a0f76ab3bf7b369088bd12e749b0b79a6" name="a0f76ab3bf7b369088bd12e749b0b79a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f76ab3bf7b369088bd12e749b0b79a6">&#9670;&#160;</a></span>matchTargetFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="detector_8hpp.html#a8d3b186a6dee1f1cfd9d05101e0ec3d0">MatchDataVec</a> Detector::matchTargetFace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDetectResult.html">DetectResult</a></td>          <td class="paramname"><span class="paramname"><em>detect_result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用识别到的数据进行人脸匹配 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">detect_result</td><td>识别到的人脸 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>MatchDataVec 匹配的结果 </dd></dl>
+
+<p class="reference">引用了 <a class="el" href="structMatchData.html#ab4fd673c0ad692317beac33d9128523d">MatchData::conf</a>, <a class="el" href="structMatchData.html#a0e5bb5c248d152e809f3080c562d04be">MatchData::face</a>, <a class="el" href="structDetectResult.html#a7f2bf1710a1dd666c40dd47960b5135a">DetectResult::faces</a>, <a class="el" href="structDetectResult.html#aba1900b3baeaa077b016225474018d15">DetectResult::features</a>, <a class="el" href="structMatchData.html#a4896ddff3acab8f475ff2ed3c4428c7b">MatchData::match</a> , 以及 <a class="el" href="structMatchData.html#a26eecd74f822fb04cc13a69f2208a565">MatchData::name</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="detector_8hpp_source.html">detector.hpp</a></li>
+<li>src/<a class="el" href="detector_8cpp.html">detector.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDetector.html">Detector</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

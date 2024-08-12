@@ -1,0 +1,15 @@
+<map id="include/detector.hpp" name="include/detector.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,5,385,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,88,62,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,35,164,55,74,83,71,84,69,79,73,77,163,50,247,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,88,139,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,35,152,82,150,83,148,78,150,78,276,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="163,80,298,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="305,34,266,71,262,67,301,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="323,88,483,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="332,31,380,76,377,80,328,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="507,88,688,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="361,30,539,81,538,86,359,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="713,88,853,115"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="386,26,531,48,701,77,720,81,718,87,700,83,531,53,385,32"/>
+</map>
