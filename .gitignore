@@ -30,4 +30,7 @@
 *.exe
 *.out
 *.app
+
 build
+.xmake
+.cache

@@ -11,19 +11,19 @@
 namespace cv {
 /**
  * @brief 定义新的bool类型解析器
- * 
- * @param node 
- * @param value 
- * @param default_value 
+ *
+ * @param node
+ * @param value
+ * @param default_value
  */
 void ReadBool(const cv::FileNode &node, bool &value, const bool &default_value);
 
 /**
  * @brief 特化bool类型>>操作运算符
- * 
- * @tparam  
- * @param n 
- * @param value 
+ *
+ * @tparam
+ * @param n
+ * @param value
  */
 template <> inline void operator>>(const cv::FileNode &n, bool &value) {
     ReadBool(n, value, false);
@@ -98,7 +98,6 @@ class ConfigReader {
                 std::this_thread::sleep_for(
                     std::chrono::milliseconds(1000 / fps));
                 auto now_time = std::filesystem::last_write_time(file_path);
-                // std::cou << last_time << "\t" << now_time << "\n";
                 if (last_time.time_since_epoch() == now_time.time_since_epoch())
                     continue;
                 last_time = std::filesystem::last_write_time(file_path);

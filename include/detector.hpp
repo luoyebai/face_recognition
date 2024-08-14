@@ -87,28 +87,27 @@ class SFace {
 
     /**
      * @brief 匹配目标特征量
-     * 
+     *
      * @param target_features 目标特征量
      * @param query_features 输入特征量
-     * @return std::pair<double, bool> 相似度，是否匹配成功 
+     * @return std::pair<double, bool> 相似度，是否匹配成功
      */
     std::pair<double, bool> matchFeatures(const cv::Mat &target_features,
                                           const cv::Mat &query_features);
 
     /**
      * @brief 设置阈值
-     * 
-     * @param cosine_threshold 
+     *
+     * @param cosine_threshold
      */
     void setThresholdCosine(float cosine_threshold);
 
     /**
      * @brief 设置阈值
-     * 
-     * @param cosine_threshold 
+     *
+     * @param cosine_threshold
      */
     void setThresholdNorml2(float norml2_threshold);
-    
 
   private:
     cv::Ptr<cv::FaceRecognizerSF> recognizer_;
@@ -156,8 +155,8 @@ using MatchDataVec = std::vector<MatchData>;
 class Detector {
   public:
     explicit Detector(YuNet yunet, SFace sface) {
-        yunet_ptr_ = new YuNet(yunet);
-        sface_ptr_ = new SFace(sface);
+        yunet_ptr_ = cv::makePtr<YuNet>(yunet);
+        sface_ptr_ = cv::makePtr<SFace>(sface);
     }
 
     /**
