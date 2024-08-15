@@ -18,10 +18,8 @@ set_toolchains("clang")
 if is_mode("debug") then
 	set_symbols("debug")
 	set_warnings("all", "error")
-	add_cxflags("-fsanitize=thread")
-	add_ldflags("-fsanitize=thread")
-	-- add_cxflags("-fsanitize=address")
-	-- add_ldflags("-fsanitize=address")
+	add_cxflags("-fsanitize=address")
+	add_ldflags("-fsanitize=address")
 	set_optimize("none")
 end
 
