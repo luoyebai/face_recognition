@@ -1,8 +1,4 @@
-
 #include "detector.hpp"
-#include "opencv2/core/base.hpp"
-#include "opencv2/core/types.hpp"
-#include "opencv2/opencv.hpp"
 
 void YuNet::setInputSize(const cv::Size &input_size) {
     detector_->setInputSize(input_size);
@@ -104,7 +100,7 @@ MatchDataVec Detector::matchTargetFace(DetectResult detect_result) {
 }
 
 void DrawFacePoint(cv::Mat input, const cv::Mat &face) {
-    static std::vector<cv::Scalar> landmark_color{
+    static const std::vector<cv::Scalar> landmark_color{
         cv::Scalar(255, 0, 0),   // right eye
         cv::Scalar(0, 0, 255),   // left eye
         cv::Scalar(0, 255, 0),   // nose tip
@@ -122,8 +118,8 @@ void DrawFacePoint(cv::Mat input, const cv::Mat &face) {
 
 cv::Mat visualize(const cv::Mat &image, MatchDataVec match_data_vec,
                   const std::string &fps_text, bool draw_face_points) {
-    static cv::Scalar green_color{0, 255, 0};
-    static cv::Scalar red_color{0, 0, 255};
+    static const cv::Scalar green_color{0, 255, 0};
+    static const cv::Scalar red_color{0, 0, 255};
     auto output_image = image.clone();
     cv::putText(output_image, fps_text, cv::Point(0, 15),
                 cv::FONT_HERSHEY_SIMPLEX, 0.5, green_color, 2);

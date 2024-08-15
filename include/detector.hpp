@@ -4,10 +4,9 @@
 #include <string>
 
 // opencv
-#include "opencv2/core/cvstd_wrapper.hpp"
-#include <opencv2/core/types.hpp>
+#include <opencv2/dnn.hpp>
+#include <opencv2/imgproc.hpp>
 #include <opencv2/objdetect/face.hpp>
-#include <opencv2/opencv.hpp>
 
 /**
  * @brief 识别器后端处理方式表
