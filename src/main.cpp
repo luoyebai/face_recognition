@@ -1,6 +1,3 @@
-// std
-#include <mutex>
-
 // opencv
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -122,8 +119,6 @@ int main() {
     // 注册热更新
     reader.registerHotUpdate(
         kconfig_name, [&reader, &debug, &zoom, &top_k, &draw_face_points]() {
-            static std::mutex mutex;
-            std::lock_guard<std::mutex> lock(mutex);
             debug = GetConfigData<int>(reader, "debug");
             top_k = GetConfigData<int>(reader, "top_k");
             zoom = GetConfigData<float>(reader, "zoom");
