@@ -12,7 +12,7 @@ set(CMAKE_C_COMPILER "/usr/bin/clang")
 set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 add_executable(main "")
 set_target_properties(main PROPERTIES OUTPUT_NAME "main")
-set_target_properties(main PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/build/linux/x86_64/release")
+set_target_properties(main PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/build/linux/x86_64/debug")
 target_include_directories(main PRIVATE
     /usr/include
     /usr/local/include
@@ -53,23 +53,34 @@ target_compile_definitions(main PRIVATE
 target_compile_options(main PRIVATE
     $<$<COMPILE_LANGUAGE:C>:-m64>
     $<$<COMPILE_LANGUAGE:CXX>:-m64>
-    $<$<COMPILE_LANGUAGE:C>:-DNDEBUG>
-    $<$<COMPILE_LANGUAGE:CXX>:-DNDEBUG>
+    $<$<COMPILE_LANGUAGE:C>:-fsanitize=address>
+    $<$<COMPILE_LANGUAGE:CXX>:-fsanitize=address>
     $<$<COMPILE_LANGUAGE:C>:-pthread>
     $<$<COMPILE_LANGUAGE:CXX>:-pthread>
 )
+if(MSVC)
+    target_compile_options(main PRIVATE -W3)
+    target_compile_options(main PRIVATE -WX)
+elseif(Clang)
+    target_compile_options(main PRIVATE -Wall)
+    target_compile_options(main PRIVATE -Werror)
+elseif(Gcc)
+    target_compile_options(main PRIVATE -Wall)
+    target_compile_options(main PRIVATE -Werror)
+endif()
 set_target_properties(main PROPERTIES C_EXTENSIONS OFF)
 target_compile_features(main PRIVATE c_std_99)
 set_target_properties(main PROPERTIES CXX_EXTENSIONS OFF)
 target_compile_features(main PRIVATE cxx_std_20)
 if(MSVC)
-    target_compile_options(main PRIVATE $<$<CONFIG:Release>:-O2>)
+    target_compile_options(main PRIVATE $<$<CONFIG:Debug>:-Od>)
 else()
-    target_compile_options(main PRIVATE -O3)
+    target_compile_options(main PRIVATE -O0)
 endif()
 if(MSVC)
+    target_compile_options(main PRIVATE -Zi)
 else()
-    target_compile_options(main PRIVATE -fvisibility=hidden)
+    target_compile_options(main PRIVATE -g)
 endif()
 if(MSVC)
     set_property(TARGET main PROPERTY
@@ -165,6 +176,7 @@ target_link_directories(main PRIVATE
 )
 target_link_options(main PRIVATE
     -m64
+    -fsanitize=address
 )
 target_sources(main PRIVATE
     src/config_reader.cpp

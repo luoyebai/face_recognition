@@ -5,7 +5,7 @@ debug: 1
 cap_or_video: 0
 cap_index: 0
 video_name: "face_test.mp4"
-zoom: 1.0
+zoom: 0.5
 
 # detection
 detection_onnx: "face_detection_yunet_2023mar.onnx"  
